@@ -1,0 +1,74 @@
+body{
+    background-color: blanchedalmond;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 100px;
+}
+
+.container{
+    width: 400px;
+    height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   font-family: Arial, Helvetica, sans-serif;
+}
+.card  {
+    background-color: cadetblue;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 10px rgba(0,0,0,0,15);
+    transition: box-shadow 0.5s ease;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+
+}
+img{
+    height: 150px;
+    width: 150px;
+    border-radius: 10px;
+    box-shadow: 0 1px #f1c2f133;
+    transition:  box-shadow 0.5s ease-in ;
+    
+
+}
+img:hover{
+    box-shadow:  0 14px 36px blueviolet;
+}
+button{
+    border-radius: 5px;
+    border: none;
+    box-shadow: 0 1px rgba(0,0,0,0.2);
+    width: 100px;
+    height: 30px;
+    font-size: 15px;
+    
+    
+    transition: box-shadow 0.5s ease-in-out;
+}
+button:hover{
+    box-shadow: 0 12px  24px blueviolet;
+}
+.card:hover{
+    box-shadow:0 18px 32px rgba(0,0,0,0.2);
+}
+.comentario {
+    position: absolute;
+    top: -30px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #f0f0f0;
+    padding: 2px 6px;
+    border-radius: 8px;
+    font-size: 10px;
+    border: 1px solid #ccc;
+    white-space: nowrap;
+}
+.button-card {
+    position: relative;
+    display: inline-block;
+    margin-top: 30px;
+  }
