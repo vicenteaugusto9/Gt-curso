@@ -1,74 +1,174 @@
-body{
-    background-color: blanchedalmond;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 100px;
+@import url(reset.css);
+@import url(pseudoElemnto.css);
+@import url(routs-classes.css);
+
+.container-fluid {
+    background-color: #080808;
+    width: 100%;
+    min-height: 700px;
+    flex-shrink: 0;
+}
+.nav {
+  
+  font-family: "IBM Plex Mono";
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 0.14px;
+  background-color: #1b1b1b;
+ 
+  top: 0;
+  width: 100%;
+  z-index: 999;
+  padding: 18px;
+
+  gap: 40px;
+  border-radius: 0px 0px 8px 8px;
+  border-top: none;
 }
 
-.container{
-    width: 400px;
-    height: 400px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-   font-family: Arial, Helvetica, sans-serif;
+.icons-social-midia {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-left: 50px;
 }
-.card  {
-    background-color: cadetblue;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 10px rgba(0,0,0,0,15);
-    transition: box-shadow 0.5s ease;
+.icons-svg {
+  display: flex;
+  width: 15px;
+  height: 15px;
+  color: #ffffff;
+}
+.container-perfil{
     display: flex;
-    flex-direction: column;
+    justify-content: space-evenly;
+    gap: 70px;
+    margin-left: -300px;
+    flex-wrap: wrap;
     align-items: center;
-    text-align: center;
+}
+.name-title {
+  color: #fff;
+  display: flex;
+  text-align: center;
+  flex-direction: column;
+  border-radius: 0px 0px 8px 8px;
+  height: 500px;
+  width: 500px;
+  margin: 20px;
+  margin-left: 300px;
+  margin-top: 80px;
+  padding: 20px;
+  font-style: normal;
+  gap: 20px;
+
+  line-height: normal;
+}
+h1 {
+  padding: 10px;
+  color: white;
+  font-size: 44px;
+  font-family: Raleway;
+  font-weight: 800;
+  word-wrap: break-word;
+  display: flex;
 
 }
-img{
-    height: 150px;
-    width: 150px;
-    border-radius: 10px;
-    box-shadow: 0 1px #f1c2f133;
-    transition:  box-shadow 0.5s ease-in ;
-    
-
-}
-img:hover{
-    box-shadow:  0 14px 36px blueviolet;
-}
-button{
-    border-radius: 5px;
-    border: none;
-    box-shadow: 0 1px rgba(0,0,0,0.2);
-    width: 100px;
-    height: 30px;
-    font-size: 15px;
-    
-    
-    transition: box-shadow 0.5s ease-in-out;
-}
-button:hover{
-    box-shadow: 0 12px  24px blueviolet;
-}
-.card:hover{
-    box-shadow:0 18px 32px rgba(0,0,0,0.2);
-}
-.comentario {
-    position: absolute;
-    top: -30px;
-    left: 50%;
-    transform: translateX(-50%);
-    background-color: #f0f0f0;
-    padding: 2px 6px;
-    border-radius: 8px;
-    font-size: 10px;
-    border: 1px solid #ccc;
-    white-space: nowrap;
-}
-.button-card {
-    position: relative;
-    display: inline-block;
+.button{
     margin-top: 30px;
-  }
+    display: flex;
+
+    
+}
+button {
+  padding: 21px 30px;
+  border: 1px solid #62ba1b;
+  color: #ffffff;
+  gap: 5px;
+  text-align: center;
+  background: #3f8e00;
+  box-shadow: 0px 8px 30px 0px rgba(63, 142, 0, 0.5);
+}
+p {
+  color: #9c9c9c;
+  text-align: start;
+  font-family: "IBM Plex Mono";
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px; /* 171.429% */
+  letter-spacing: 0.14px;
+}
+.img-perfil{
+    justify-content: flex-end;
+    align-items: flex-end;
+    display: flex;
+    
+  
+   
+ 
+}
+.perfil-do-lindo {
+  width: 400px;
+  height: 400px;
+  border-radius: 50%;
+  flex-shrink: 0;
+  background-color: url(/aula-01/assets/imgs/vicenteTI.png) lightgray 50% / cover no-repeat;
+ 
+}
+.minhas-tecnologias{
+    display: flex;
+    justify-content: center;
+    color: #FFF;
+    margin-bottom: 20px;
+}
+.minhas-tecnologias2{
+    display: flex;
+    justify-content: center;
+    color: #FFF;
+    margin-top: 10px;
+    gap: 40px;
+    flex-wrap: wrap;
+   
+   
+    
+}
+h5{
+    font-weight: 800;
+    color: #FFF;
+
+    font-family: "IBM Plex Mono";
+    font-size: 14px;
+    font-style: normal;
+
+    line-height: normal;
+}
+.item-imgs-tecnolgias{
+    display: flex;
+    margin-bottom: 20px;
+    flex-shrink: 0;
+    border-radius: 6px;
+    
+    
+}
+
+.imagens-teconoligas{
+    height: 50px;
+    width: 50px;
+ 
+    
+}
+.main-container{
+    display: flex;
+    background-color: #FFFFFF;
+    justify-content: center;
+    align-items: center;
+}
+.main-tile{
+    text-align: center;
+    width: 897px;
+    height: 1242px;
+    flex-shrink: 0;
+}
+    
